@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subway Counter</title>
+        <link rel="stylesheet" href="app.css"/>
+    </head>
+    <body>
+        <div id="app-space">
+            <h1 id="welcome-el"></h1>
+            <img class=bg-img src="img/TTC17 OpsStock-7076.jpg"/>
+            <div class="text-space">
+                <h1>No. of people entered:</h1>
+                <h2 id="count">0</h2>  
+            </div>
+            <button class="button" id="save-btn" onclick="save()">Save</button>
+            <button class="button" id="increment-btn" onclick="increment()">Count</button>
+            <p id="save-prompt">Previous Entry: </p>
+        </div>
+        <!--Where we write our JavaScript-->
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.bg-img{
+    position: absolute;
+    opacity: 0.3;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+#app-space {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-space {
+    width: 50%;
+} 
+
+.button {
+    width: 400px;
+    z-index: 1;
+    font-size: 3rem;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    color: aliceblue;
+    background-color: maroon;
+    border: none;
+    border-radius: 10px;
+}
+
+#save-btn {
+    width: 200px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: gray;
+}
+
+#save-prompt {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#save-btn:hover {
+    background-color: black;
+}
+
+#save-btn:active{
+    background-color: gray;
+}
+
+#increment-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+#increment-btn:active {
+    background-color: maroon;
+}
+
+h1, h2 {
+    z-index: 1;;
+    width: 100%;
+    color: blue;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+
+
+
+
