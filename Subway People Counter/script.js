@@ -7,13 +7,18 @@ let counter = document.getElementById('count')
 
 function increment() {
     people += 1
-    counter.innerText = people
+    counter.textContent = people
 }
 
 function save() {
-    let count = people + " - "
-    saveEl.innerText += count
-    console.log(people)
+    let countStr = people + " - "
+    saveEl.textContent += countStr
+    reset()
+}
+
+function reset() {
+    people = 0
+    counter.textContent = people
 }
 
 // Welcome script
