@@ -1,22 +1,21 @@
 
 let people = 0;
 
+// Grabbing elements for the app
 const incrementor = document.getElementById('increment-btn')
 const saveEl = document.getElementById('save-prompt')
 let counter = document.getElementById('count')
 
+// Incrementing the counter when
 function increment() {
     people += 1
     counter.textContent = people
 }
 
+// save the number and reset
 function save() {
     let countStr = people + " - "
     saveEl.textContent += countStr
-    reset()
-}
-
-function reset() {
     people = 0
     counter.textContent = people
 }
