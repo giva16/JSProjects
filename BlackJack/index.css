@@ -17,12 +17,12 @@ body {
 }
 
 #message-el {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
 p {
-    font-size: 4rem;
+    font-size: 3rem;
 
 }
 
@@ -32,7 +32,7 @@ h1 {
     color: goldenrod;
 }
 
-#start-btn {
+.btn {
     font-size: 3.5rem;
     font-weight: bold;
     color: green ;
@@ -42,29 +42,42 @@ h1 {
     padding: 5px 60px;
 }
 
-#start-btn:hover {
+#new-card-btn {
+    margin-top: 10px;
+    padding: 5px 84px;
+}
+
+.btn:hover {
     background-color: rgb(255, 100, 30);
 }
 
-#start-btn:active {
+.btn:active {
     box-shadow: inset 0px 0px 5px brown;
 }
 
 
+
 @media (max-width: 1000px) {
+    body {
+        align-items: center;
+    }
     #message-el {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     p {
-        font-size: 3rem;
+        font-size: 2rem;
 
     }
     h1 {
         font-size: 6rem;
     }
 
-    #start-btn {
+    .btn {
         font-size: 2.5rem;
+    }
+
+    #new-card-btn {
+        padding: 5px 77px;
     }
 }

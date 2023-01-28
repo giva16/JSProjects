@@ -1,14 +1,15 @@
-let firstCard = 10
-let secondCard = 4
+let firstCard = Math.floor(Math.random() * (12 - 2));
+let secondCard = Math.floor(Math.random() * (12 - 2));
+cards = [firstCard, secondCard];
 let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
 let message = ""
+let messageEl = document.querySelector("#message-el");
+let sumEl = document.querySelector("#sum-el");
+let cardsEl = document.querySelector('#cards-el')
 
-// 2. Create a startGame() function. Move the conditional
-// below (line 11-20) inside the body of the function.
-
-const start = () => {
+const startGame = () => {
     if (sum <= 20) {
         message = "Do you want to draw a new card? 🙂"
     } else if (sum === 21) {
@@ -18,5 +19,13 @@ const start = () => {
         message = "You're out of the game! 😭"
         isAlive = false
     }
+    messageEl.textContent = message;
+    sumEl.textContent = "Sum: " + sum;
+    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;
 }
-console.log(message)
+
+const drawCard = () => {
+    let card = Math.floor(Math.random() * (12 - 2));
+    sum += card;
+    startGame();
+}
